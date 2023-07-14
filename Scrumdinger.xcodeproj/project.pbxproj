@@ -77,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7745E37A2A61007100C03FC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77F8A38F2A5FBA05002AF4F1 /* MeetingView.swift */,
+				77F8A3BC2A5FCD21002AF4F1 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		77F8A3812A5FBA05002AF4F1 = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +109,9 @@
 		77F8A38C2A5FBA05002AF4F1 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				7745E37A2A61007100C03FC6 /* Views */,
 				77F8A3B72A5FC643002AF4F1 /* Models */,
 				77F8A38D2A5FBA05002AF4F1 /* ScrumdingerApp.swift */,
-				77F8A38F2A5FBA05002AF4F1 /* MeetingView.swift */,
-				77F8A3BC2A5FCD21002AF4F1 /* CardView.swift */,
 				77F8A3912A5FBA08002AF4F1 /* Assets.xcassets */,
 				77F8A3932A5FBA08002AF4F1 /* Preview Content */,
 			);
