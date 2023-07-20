@@ -11,7 +11,7 @@ struct MeetingHeaderView: View {
     let secondsElapsed: Int
     let secondsRemaining: Int
     let theme: Theme
-    
+
     private var totalSeconds: Int {
         secondsElapsed + secondsRemaining
     }
@@ -25,19 +25,19 @@ struct MeetingHeaderView: View {
     
     var body: some View {
         VStack {
-            ProgressView(value: 5, total: 15)
+            ProgressView(value: progress)
                 .progressViewStyle(ScrumProgressViewStyle(theme: theme))
             HStack {
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed")
                         .font(.caption)
-                    Label("\(secondsElapsed)", systemImage: "hourglass.bottomhalf.fill")
+                    Label("\(secondsElapsed)", systemImage: "hourglass.tophalf.fill")
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
                     Text("Seconds Remaining")
                         .font(.caption)
-                    Label("\(secondsRemaining)", systemImage: "hourglass.tophalf.fill")
+                    Label("\(secondsRemaining)", systemImage: "hourglass.bottomhalf.fill")
                         .labelStyle(.trailingIcon)
                 }
             }
