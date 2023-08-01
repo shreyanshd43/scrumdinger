@@ -10,6 +10,7 @@
 		7745E37C2A61016400C03FC6 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7745E37B2A61016400C03FC6 /* TrailingIconLabelStyle.swift */; };
 		777D2F142A79B35D005C8C08 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D2F132A79B35D005C8C08 /* MeetingTimerView.swift */; };
 		777D2F162A79B5A5005C8C08 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D2F152A79B5A5005C8C08 /* SpeakerArc.swift */; };
+		777D2F182A79BE63005C8C08 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D2F172A79BE63005C8C08 /* SpeechRecognizer.swift */; };
 		779C76A02A661A7B004F4AE6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779C769F2A661A7B004F4AE6 /* DetailView.swift */; };
 		77A922F12A660376008612DF /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A922F02A660376008612DF /* ScrumsView.swift */; };
 		77CC80BD2A6712B100B3366C /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CC80BC2A6712B100B3366C /* ThemeView.swift */; };
@@ -59,6 +60,7 @@
 		7745E37B2A61016400C03FC6 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		777D2F132A79B35D005C8C08 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
 		777D2F152A79B5A5005C8C08 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
+		777D2F172A79BE63005C8C08 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		779C769F2A661A7B004F4AE6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		77A922F02A660376008612DF /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		77CC80BC2A6712B100B3366C /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				77D1DDCF2A69B51200604E0C /* ScrumTimer.swift */,
 				77D1DDDB2A69E76F00604E0C /* ScrumStore.swift */,
 				77D1DDD92A69D94000604E0C /* History.swift */,
+				777D2F172A79BE63005C8C08 /* SpeechRecognizer.swift */,
 				77F8A3BA2A5FC948002AF4F1 /* DailyScrum.swift */,
 				77D1DDDD2A69F64900604E0C /* ErrorWrapper.swift */,
 			);
@@ -365,6 +368,7 @@
 				77D1DDD82A69D6DA00604E0C /* NewScrumSheet.swift in Sources */,
 				7745E37C2A61016400C03FC6 /* TrailingIconLabelStyle.swift in Sources */,
 				77F8A3B92A5FC678002AF4F1 /* Theme.swift in Sources */,
+				777D2F182A79BE63005C8C08 /* SpeechRecognizer.swift in Sources */,
 				77D1DDD22A69B81700604E0C /* MeetingHeaderView.swift in Sources */,
 				77A922F12A660376008612DF /* ScrumsView.swift in Sources */,
 				77F8A3902A5FBA05002AF4F1 /* MeetingView.swift in Sources */,
@@ -531,6 +535,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -559,6 +565,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
